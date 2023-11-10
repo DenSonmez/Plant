@@ -1,0 +1,57 @@
+GET {{url}}/plants
+Content-Type: application/json
+
+###
+
+GET {{url}}/plants/5
+Content-Type: application/json
+
+###
+
+GET {{url}}/plants/type/Rose
+Content-Type: application/json
+
+###
+
+POST {{url}}/plants
+Content-Type: application/json
+
+{
+  "plantType": "Tulipan",
+  "name": " lilla",
+  "maxHeight": 200,
+  "price": 299.5,
+  "resellerId": 4
+  }
+
+###
+
+DELETE {{url}}/plants/6
+Content-Type: application/json
+
+
+###
+
+PUT {{url}}/plants/5
+Content-Type: application/json
+
+{
+  "id": 5,
+  "plantType": "Tulip",
+  "name": "The DarkLady",
+  "maxHeight": 100,
+  "price": 299.5,
+  "resellerId": 3
+}
+
+###
+
+
+POST {{url}}/plants/reseller/3/1
+Content-Type: application/json
+
+
+###
+
+GET {{url}}/plants/reseller/3
+Content-Type: application/json
